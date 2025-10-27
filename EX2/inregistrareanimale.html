@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Formular de inregistrare animale</title>
+    <link rel="stylesheet" href="inregistrareanimale.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Formular de inregistrare animale</h2>
+        <p>Completati formularul pentru a inregistra animalul la clinica veterinara.</p>
+
+        <form>
+            <label>Nume stapan:</label>
+            <input type="text" name="numeStapan">
+
+            <label>Telefon:</label>
+            <input type="text" name="telefon">
+
+            <label>Nume animal:</label>
+            <input type="text" name="numeAnimal">
+
+            <label>Specie:</label>
+            <select name="specie">
+                <option>Caine</option>
+                <option>Pisica</option>
+                <option>Iepure</option>
+                <option>Altul</option>
+            </select>
+
+            <label>Sexul animalului:</label>
+            <input type="radio" name="sex" value="Mascul"> Mascul
+            <input type="radio" name="sex" value="Femela"> Femela
+
+            <label>Servicii dorite:</label>
+            <input type="checkbox" name="servicii" value="Vaccinare"> Vaccinare<br>
+            <input type="checkbox" name="servicii" value="Deparazitare"> Deparazitare<br>
+            <input type="checkbox" name="servicii" value="Consult"> Consult<br>
+
+            <label>Observatii:</label>
+            <textarea rows="4" name="observatii"></textarea>
+
+            <div class="buttons">
+                <button type="submit">Trimite</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
